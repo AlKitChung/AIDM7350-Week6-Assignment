@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alvin Chung | Creative Technologist & Researcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav>
+    <div class="nav-logo">ALVIN CHUNG</div>
+    <ul class="nav-links">
+      <li><a href="#playground">Playground</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Papers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" style="max-width:none;">
+      <div class="hero-label">Creative Technologist · Researcher · Educator</div>
+      <h1 class="hero-title">Alvin Chung<br/>Cheuk Kit</h1>
+      <div class="hero-role">MSc AI & Digital Media · HKBU</div>
+      <p class="hero-sub">
+        Bridging virtual reality, 3D Gaussian Splatting, and immersive media to push the frontier of human–AI interaction in visual storytelling.
+      </p>
+      <div class="hero-btns">
+        <a href="#playground" class="btn btn-primary">Try Interaction</a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
+      </div>
+      <div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Publications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Research Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="5">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-target="2">0</div>
+        <div class="stat-label">Dean's List Awards</div>
+      </div>
+    </div>
+
+    <!-- FUN INTERACTION -->
+    <section id="playground" style="padding-bottom: 2rem;">
+      <div class="section-tag">// Playground</div>
+      <h2 class="section-title">2D Gaussian Splatting Sim</h2>
+      <p class="section-desc">Because of my research in <strong>3D Gaussian Splatting</strong>, I built this interactive 2D simulation. <strong>Hover</strong> to attract the splats, <strong>Click & Hold</strong> to scatter them across the canvas.</p>
+      <div class="playground-container">
+        <canvas id="interactive-canvas"></canvas>
+        <div class="playground-hint">Interactive Canvas Active</div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-tag">// About</div>
+      <h2 class="section-title">Who Am I?</h2>
+      <p class="section-desc">A researcher and creative technologist working at the intersection of VR, computer vision, and digital art. I connect creative practice with quantitative methods to produce immersive, data-driven experiences.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-icon">🌐</div>
+          <h3>VR & Immersive Media</h3>
+          <p>Designing interactive virtual environments — from VR-based driving training systems to museum installations — using Unreal Engine, Unity, and custom ML pipelines.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">✨</div>
+          <h3>3D Gaussian Splatting</h3>
+          <p>Pioneering research in Gaussian Splatting for real-time 3D scene reconstruction, explored through accepted papers at IHSI 2026 and IHIET-AI-2026.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🤖</div>
+          <h3>Machine Learning & CV</h3>
+          <p>Developed ML-based computer vision techniques for 3D reconstruction and visual effects production, including USD pipeline optimization at FATface Production.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card-icon">🎓</div>
+          <h3>Teaching & Mentoring</h3>
+          <p>Currently a Teaching Assistant at HKMU School of Arts, guiding students in visual design, creative programming, VR, and interactive media development.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-tag">// Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <p class="section-desc">A broad toolkit spanning VR development, computer vision, creative coding, and academic research.</p>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="92">
+          <div class="skill-header"><span class="skill-icon">✨</span><span class="skill-name">3D Gaussian Splatting</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">92%</div>
+        </div>
+        <div class="skill-card" data-skill="90">
+          <div class="skill-header"><span class="skill-icon">🌐</span><span class="skill-name">VR & Game Engines</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="skill-card" data-skill="85">
+          <div class="skill-header"><span class="skill-icon">👁️</span><span class="skill-name">Computer Vision</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">85%</div>
+        </div>
+        <div class="skill-card" data-skill="82">
+          <div class="skill-header"><span class="skill-icon">🧠</span><span class="skill-name">Machine Learning</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">82%</div>
+        </div>
+        <div class="skill-card" data-skill="88">
+          <div class="skill-header"><span class="skill-icon">🎬</span><span class="skill-name">3D Animation & VFX</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">88%</div>
+        </div>
+        <div class="skill-card" data-skill="78">
+          <div class="skill-header"><span class="skill-icon">🐍</span><span class="skill-name">Programming & Data Analysis</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+          <div class="skill-pct">78%</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-tag">// Projects</div>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-desc">Real-world projects combining VR, Gaussian Splatting, and interactive media in academic and museum contexts.</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-thumb thumb-1">🏛️</div>
+          <div class="project-body">
+            <div class="project-tag">Museum Installation · 2024–Present</div>
+            <div class="project-title">Eileen Chang Exhibition</div>
+            <p class="project-desc">Wall projection installation for Soong's Family Dining Room at HKMU Museum of Modern Chinese Literature, using Gaussian Splatting and Unreal Engine to enhance visitor engagement.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag-chip">Gaussian Splatting</span>
+            <span class="tag-chip">Unreal Engine</span>
+            <span class="tag-chip">Interactive</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb thumb-2">🚗</div>
+          <div class="project-body">
+            <div class="project-tag">Research Project · 2023–Present</div>
+            <div class="project-title">VR Driving Training System</div>
+            <p class="project-desc">Designed a VR-based driving education environment with interactive mechanics, integrating ML-based computer vision modules and 3D reconstruction for realistic simulation.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag-chip">VR</span>
+            <span class="tag-chip">Computer Vision</span>
+            <span class="tag-chip">ML</span>
+            <span class="tag-chip">3D Reconstruction</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb thumb-3">📖</div>
+          <div class="project-body">
+            <div class="project-tag">Digital Humanities · 2023–Present</div>
+            <div class="project-title">Immersive Chinese Literature</div>
+            <p class="project-desc">Developed VR experiences and virtual projections to support digital humanities teaching — exploring Chinese literature and cultural narratives through 3D animation and interactive installations.</p>
+          </div>
+          <div class="project-footer">
+            <span class="tag-chip">VR</span>
+            <span class="tag-chip">3D Animation</span>
+            <span class="tag-chip">Digital Humanities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <div class="section-tag">// Publications</div>
+      <h2 class="section-title">Research Papers</h2>
+      <p class="section-desc">Peer-reviewed contributions to journals and international conferences on Gaussian Splatting, VR, and immersive media.</p>
+      <div class="pub-list">
+        <div class="pub-card">
+          <div class="pub-num">01</div>
+          <div class="pub-content">
+            <div class="pub-title">Human-AI Landscape Visualization Through 3D Gaussian Point Clouds: Investigating Interactive Environmental</div>
+            <span class="pub-venue venue-conf">IHSI 2026 · Accepted</span>
+          </div>
+        </div>
+        <div class="pub-card">
+          <div class="pub-num">02</div>
+          <div class="pub-content">
+            <div class="pub-title">Phantom Terrain: Evoking Community Memory Through Gaussian Point Cloud VR and Immersive Landscape Reimagination</div>
+            <span class="pub-venue venue-conf">IHIET-AI 2026 · Accepted</span>
+          </div>
+        </div>
+        <div class="pub-card">
+          <div class="pub-num">03</div>
+          <div class="pub-content">
+            <div class="pub-title">Reimagining Creativity: Gaussian Splatting as an Organological Extension of Imagination in Artistic Processes</div>
+            <span class="pub-venue venue-journal">Leonardo (Elsevier) 2025 · 58(3), pp. 241–249</span>
+          </div>
+        </div>
+        <div class="pub-card">
+          <div class="pub-num">04</div>
+          <div class="pub-content">
+            <div class="pub-title">Visualizing the Unseen: Digital Simulation and Immersive VR of Porcelain Firing Processes</div>
+            <span class="pub-venue venue-conf">ISEA 2025 · Presented</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline">
+      <div class="section-tag">// Journey</div>
+      <h2 class="section-title">My Path</h2>
+      <div class="tl-line">
+        <div class="tl-item">
+          <div class="tl-dot" style="background:#888;box-shadow:0 0 8px #888"></div>
+          <div class="tl-date" style="color:#888">SEP 2018 – APR 2022</div>
+          <div class="tl-title">BFA (Hons) in Animation & Visual Effects</div>
+          <div class="tl-org">Hong Kong Metropolitan University</div>
+          <p class="tl-desc">Upper Second Class Honours. Dean's List in Autumn 2020 & Spring 2021.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" style="background:var(--neon-pink);box-shadow:0 0 12px var(--neon-pink)"></div>
+          <div class="tl-date" style="color:var(--neon-pink)">JUL 2022 – OCT 2023</div>
+          <div class="tl-title">Junior FX Artist</div>
+          <div class="tl-org">FATface Production Ltd</div>
+          <p class="tl-desc">Developed USD pipelines, conducted simulation production for films, and assisted in ML research for VFX.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" style="background:var(--neon-cyan);box-shadow:0 0 12px var(--neon-cyan)"></div>
+          <div class="tl-date">NOV 2023 – NOV 2024</div>
+          <div class="tl-title">Research Assistant (Computer Vision Engineer)</div>
+          <div class="tl-org">Hong Kong Metropolitan University</div>
+          <p class="tl-desc">Designed a VR-based driving training system and developed ML-based CV techniques for 3D reconstruction.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot" style="background:#00ff99;box-shadow:0 0 12px #00ff99"></div>
+          <div class="tl-date" style="color:#00ff99">DEC 2024 – PRESENT</div>
+          <div class="tl-title">Teaching Assistant</div>
+          <div class="tl-org">School of Arts & Social Sciences, HKMU</div>
+          <p class="tl-desc">Supporting visual design, creative programming, and game engine development courses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-tag">// Contact</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-info">
+        <a href="mailto:chungkit9@gmail.com" class="contact-chip">📧 chungkit9@gmail.com</a>
+        <a href="tel:85290128063" class="contact-chip">📞 852-9012 8063</a>
+        <span class="contact-chip">📍 Hong Kong</span>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="e.g. Dr. Chan" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your research or project idea..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start">Send Message →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 <span>Alvin Chung Cheuk Kit</span> · AI & Digital Media · Hong Kong</p>
+  </footer>
+
+  <script>
+    /* CURSOR */
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX - 8 + 'px'; cursor.style.top = e.clientY - 8 + 'px';
+      ring.style.left = e.clientX - 20 + 'px'; ring.style.top = e.clientY - 20 + 'px';
+    });
+    document.querySelectorAll('a,button,.project-card,.about-card,.skill-card,.pub-card').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.style.transform='scale(2)'; ring.style.transform='scale(1.5)'; });
+      el.addEventListener('mouseleave', () => { cursor.style.transform='scale(1)'; ring.style.transform='scale(1)'; });
+    });
+
+    /* BG PARTICLES */
+    const bgCanvas = document.getElementById('bg-canvas');
+    const bgCtx = bgCanvas.getContext('2d');
+    function resizeBg() { bgCanvas.width = window.innerWidth; bgCanvas.height = window.innerHeight; }
+    resizeBg(); window.addEventListener('resize', resizeBg);
+    class BgParticle {
+      constructor() { this.reset(); }
+      reset() {
+        this.x = Math.random() * bgCanvas.width; this.y = Math.random() * bgCanvas.height;
+        this.vx = (Math.random()-.5)*.3; this.vy = (Math.random()-.5)*.3;
+        this.r = Math.random()*1.5+.5; this.alpha = Math.random()*.5+.1;
+        this.color = Math.random()>.5 ? '0,245,255' : '191,0,255';
+      }
+      update() { this.x+=this.vx; this.y+=this.vy; if(this.x<0||this.x>bgCanvas.width||this.y<0||this.y>bgCanvas.height)this.reset(); }
+      draw() { bgCtx.beginPath(); bgCtx.arc(this.x,this.y,this.r,0,Math.PI*2); bgCtx.fillStyle=`rgba(${this.color},${this.alpha})`; bgCtx.fill(); }
+    }
+    const bgParticles = Array.from({length:100},()=>new BgParticle());
+    (function animateBg(){
+      bgCtx.clearRect(0,0,bgCanvas.width,bgCanvas.height);
+      bgParticles.forEach(p=>{p.update();p.draw();});
+      for(let i=0;i<bgParticles.length;i++) for(let j=i+1;j<bgParticles.length;j++) {
+        const dx=bgParticles[i].x-bgParticles[j].x, dy=bgParticles[i].y-bgParticles[j].y, d=Math.sqrt(dx*dx+dy*dy);
+        if(d<100){ bgCtx.beginPath(); bgCtx.moveTo(bgParticles[i].x,bgParticles[i].y); bgCtx.lineTo(bgParticles[j].x,bgParticles[j].y); bgCtx.strokeStyle=`rgba(0,245,255,${.06*(1-d/100)})`; bgCtx.lineWidth=.5; bgCtx.stroke(); }
+      }
+      requestAnimationFrame(animateBg);
+    })();
+
+    /* INTERACTIVE GAUSSIAN SPLATTING PLAYGROUND */
+    const playCanvas = document.getElementById('interactive-canvas');
+    const playCtx = playCanvas.getContext('2d');
+    const playContainer = document.querySelector('.playground-container');
+    let playW, playH;
+    function resizePlay() {
+      playW = playContainer.clientWidth; playH = playContainer.clientHeight;
+      playCanvas.width = playW; playCanvas.height = playH;
+    }
+    resizePlay(); window.addEventListener('resize', resizePlay);
+
+    let mouse = { x: -1000, y: -1000, clicked: false };
+    playCanvas.addEventListener('mousemove', e => { const r = playCanvas.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+    playCanvas.addEventListener('mouseleave', () => { mouse.x = -1000; mouse.y = -1000; mouse.clicked = false; });
+    playCanvas.addEventListener('mousedown', () => mouse.clicked = true);
+    playCanvas.addEventListener('mouseup', () => mouse.clicked = false);
+
+    class Splat {
+      constructor() {
+        this.x = Math.random() * playW;
+        this.y = Math.random() * playH;
+        this.baseX = this.x; this.baseY = this.y;
+        this.size = Math.random() * 15 + 5;
+        this.density = (Math.random() * 30) + 1;
+        this.color = Math.random() > 0.5 ? '0,245,255' : '191,0,255';
+      }
+      update() {
+        let dx = mouse.x - this.x; let dy = mouse.y - this.y;
+        let dist = Math.sqrt(dx * dx + dy * dy);
+        let maxDist = 200;
+
+        if (dist < maxDist) {
+          let force = (maxDist - dist) / maxDist;
+          let dirX = (dx / dist) * force * this.density;
+          let dirY = (dy / dist) * force * this.density;
+          if (mouse.clicked) { this.x -= dirX * 2; this.y -= dirY * 2; } 
+          else { this.x += dirX * 0.3; this.y += dirY * 0.3; }
+        } else {
+          if (this.x !== this.baseX) { this.x -= (this.x - this.baseX) / 20; }
+          if (this.y !== this.baseY) { this.y -= (this.y - this.baseY) / 20; }
+        }
+      }
+      draw() {
+        let grad = playCtx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
+        grad.addColorStop(0, `rgba(${this.color}, 0.6)`);
+        grad.addColorStop(1, `rgba(${this.color}, 0)`);
+        playCtx.beginPath(); playCtx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        playCtx.fillStyle = grad; playCtx.fill();
+      }
+    }
+    const splats = Array.from({length: 150}, () => new Splat());
+    (function animatePlay() {
+      playCtx.clearRect(0, 0, playW, playH);
+      splats.forEach(s => { s.update(); s.draw(); });
+      requestAnimationFrame(animatePlay);
+    })();
+
+    /* COUNTERS */
+    const counterObs = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{
+        if(!entry.isIntersecting)return;
+        const el=entry.target, target=+el.dataset.target;
+        let cur=0; const step=target/60;
+        const t=setInterval(()=>{ cur=Math.min(cur+step,target); el.textContent=Math.round(cur)+'+'; if(cur>=target)clearInterval(t); },20);
+        counterObs.unobserve(el);
+      });
+    },{threshold:.5});
+    document.querySelectorAll('.stat-num[data-target]').forEach(c=>counterObs.observe(c));
+
+    /* SKILL BARS */
+    const skillObs = new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{ if(!entry.isIntersecting)return; const card=entry.target; card.querySelector('.skill-bar-fill').style.width=card.dataset.skill+'%'; skillObs.unobserve(card); });
+    },{threshold:.3});
+    document.querySelectorAll('.skill-card[data-skill]').forEach(c=>skillObs.observe(c));
+
+    /* FORM */
+    function handleSubmit(e){
+      e.preventDefault(); const btn=e.target.querySelector('button');
+      btn.textContent='✓ Message Sent!'; btn.style.background='linear-gradient(135deg,#00f5aa,#00bfff)';
+      setTimeout(()=>{ btn.textContent='Send Message →'; btn.style.background=''; e.target.reset(); },3000);
+    }
+
+    /* FADE IN */
+    const fadeObs = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; fadeObs.unobserve(e.target); } });
+    },{threshold:.1});
+    document.querySelectorAll('.about-card,.project-card,.skill-card,.tl-item,.pub-card,.playground-container').forEach(el=>{
+      el.style.opacity='0'; el.style.transform='translateY(30px)';
+      el.style.transition='opacity .6s ease, transform .6s ease'; fadeObs.observe(el);
+    });
+  </script>
+</body>
+</html>
